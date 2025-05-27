@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("demokhaithocode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d59af5dd1c344f0af06c72c355f379bf2b5d15a")]
 [assembly: System.Reflection.AssemblyProductAttribute("demokhaithocode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("demokhaithocode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

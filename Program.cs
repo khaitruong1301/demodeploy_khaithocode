@@ -3,7 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+if (builder.Environment.IsProduction())
+{
+    builder.WebHost.UseUrls("http://+:80");
+}
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 //entity framework
@@ -13,6 +16,7 @@ builder.Services.AddDbContext<StoreContext>(options =>
         .UseLazyLoadingProxies(false)
         .UseSqlServer(connectionString));
 var app = builder.Build();
+
 
 app.UseSwagger();
 app.UseSwaggerUI();
